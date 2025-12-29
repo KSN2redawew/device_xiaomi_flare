@@ -5,7 +5,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/flare
-MY_KERNEL_PATH := $(BUILD_TOP)/kernel/xiaomi/mt6768
+MY_KERNEL_PATH := kernel/xiaomi/flare-prebuilt
 
 # A/B
 AB_OTA_UPDATER := true
