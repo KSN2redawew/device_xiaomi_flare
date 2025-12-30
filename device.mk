@@ -121,6 +121,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6768
 
+PRODUCT_PACKAGES += \
+    NoBiometricsOverlay
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -139,7 +142,4 @@ PRODUCT_CHARACTERISTICS := tablet,nosdcard
 TARGET_SCREEN_HEIGHT := 1340
 TARGET_SCREEN_WIDTH := 800
 TARGET_SCREEN_DENSITY := 179
-PRODUCT_PACKAGES += \\
-PRODUCT_PACKAGES += NoBiometricsOverlay
 
-PRODUCT_PACKAGES += NoBiometricsOverlay
