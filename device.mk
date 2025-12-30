@@ -117,14 +117,20 @@ PRODUCT_PACKAGES += \
     meta_init.rc \
     meta_init.vendor.rc \
     multi_init.rc \
-
+	
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6768
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/mediatek
+    hardware/mediatek \
+    hardware/mediatek/libmtkperf_client \
+    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/aospa/interfaces \
+    kernel/xiaomi/flare-prebuilt
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/flare/flare-vendor.mk)
